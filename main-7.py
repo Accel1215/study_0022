@@ -11,6 +11,7 @@ def makeDict():
     return dict(zip(first_word_list, second_word_list))
 
 
-file = open("text.txt", 'w')
+fileName = input("Input file name")
+file = open(fileName, 'w')
 file.write(makeDict().__str__())
 file.close()
